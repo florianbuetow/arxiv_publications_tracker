@@ -17,8 +17,8 @@ This project uses a Dockerized Python script to parse the arXiv ATOM feed for ne
 ### 2. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-name>
+git clone git@github.com:florianbuetow/arxiv_publications_tracker.git
+cd arxiv_publications_tracker
 ```
 ### 3. Make the scripts executable
 
