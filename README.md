@@ -8,6 +8,23 @@ This project uses a Dockerized Python script to parse the arXiv ATOM feed for ne
 - Saves all publications from each ATOM feed to category-specific directories (e.g., `data/cs.AI/`).
 - Logs new publications to timestamped JSON files in the appropriate `/data/<CATEGORY>/` directory.
 
+## Project Structure
+
+```
+├── Dockerfile               # Docker configuration to create the container environment
+├── README.md                # Project documentation with setup, usage, and overview
+├── arxiv_tracker.py         # Main script to track and organize arXiv publications by category
+├── build_and_run.sh         # Script to build and start the Docker container
+├── data                     # Directory for storing publication data by arXiv category
+│   ├── cs.AI                # Data related to Artificial Intelligence publications
+│   ├── cs.CL                # Data related to Computation and Language (NLP) publications
+│   ├── cs.CV                # Data related to Computer Vision publications
+│   ├── cs.LG                # Data related to Machine Learning publications
+│   └── stat.ML              # Data related to Statistics - Machine Learning publications
+├── destroy.sh               # Script to stop and remove the Docker container for cleanup
+├── docker-compose.yml       # Docker Compose configuration file for managing services
+└── requirements.txt         # List of required Python packages for the project
+```
 ## Setup Instructions
 
 ### 1. Prerequisites
