@@ -33,20 +33,12 @@ chmod +x *.sh
 In the `arxiv_tracker.py` file, specify the categories you'd like to track. At the end of the file, you'll find the following lines:
 
 ```python
-if __name__ == "__main__":
-    for search_category in ["cs.AI"]:
-        main(search_category)
-```
-
-Update the list of `search_category` values to include each category you wish to track. For example:
-
-```python
 # Run the script
 if __name__ == "__main__":
     for search_category in ["cs.AI", "cs.CL", "cs.CV", 'cs.LG', 'stat.ML']:
         main(search_category)
 ```
-
+Update the list of `search_category` values to include each category you wish to track. For example:
 You can find the full list of arXiv categories [here](https://arxiv.org/category_taxonomy).
 
 ### 5. Build and Run the Docker Image
